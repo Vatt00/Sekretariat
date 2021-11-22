@@ -1,0 +1,39 @@
+﻿<Window x:Class="Sekretariat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sekretariat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Uczeń">
+                <Grid Background="#7E8EA8">
+                    <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imie1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imie2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwisko1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwisko2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiona1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiona2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="data"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="pesel"/>
+                    <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko Panieńskie" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Nauczyciel">
+                <Grid Background="#7E8EA8"/>
+            </TabItem>
+            <TabItem Header="Pracownik Obsługi">
+                <Grid Background="#7E8EA8"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
