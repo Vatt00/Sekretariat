@@ -25,6 +25,7 @@
                     <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
                     <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
                     <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submit" Click="submit_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Nauczyciel">
