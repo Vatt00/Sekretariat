@@ -26,7 +26,7 @@
                     <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
                     <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
                     <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitUczen" Click="submit_Click_Uczen"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="135,256,0,0" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,256,0,0" VerticalAlignment="Top" Name="dataUUczen"/>
                     
                 </Grid>
             </TabItem>
@@ -39,14 +39,17 @@
                     <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoNauczyciel2"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaNauczyciel1"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaNauczyciel2"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="135,257,0,0" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,257,0,0" VerticalAlignment="Top" Name="dataUNauczyciel"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="peselNauczyciel"/>
                     <Button Content="Zdjęcie" HorizontalAlignment="Left" Margin="472,48,0,0" VerticalAlignment="Top" Name="zdjecieNauczyciel" Click="zdjecieNauczyciel_Click"/>
-                    <TextBox HorizontalAlignment="Left" Margin="472,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="plecNauczyciel"/>
-                    <CheckBox HorizontalAlignment="Left" Margin="472,120,0,0" VerticalAlignment="Top"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="472,84,0,0" VerticalAlignment="Top" Width="120" Name="plecNauczyciel">
+                        <ComboBoxItem>Pan</ComboBoxItem>
+                        <ComboBoxItem>Pani</ComboBoxItem>
+                    </ComboBox>
+                    <CheckBox HorizontalAlignment="Left" Margin="472,120,0,0" VerticalAlignment="Top" Name="wychowastwoNauczyciel"/>
                     <TextBox HorizontalAlignment="Left" Margin="472,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Name="przedmiotyNauczyciel"/>
-                    <TextBox HorizontalAlignment="Left" Margin="472,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="klasyNauczyciel"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="472,219,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="472,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Name="klasyNauczyciel"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="472,219,0,0" VerticalAlignment="Top" Name="dataZNauczyciel"/>
                     
                     <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
                     <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
@@ -74,16 +77,19 @@
                     <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoPracownik2"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaPracownik1"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaPracownik2"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="135,255,0,0" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,255,0,0" VerticalAlignment="Top" Name="dataUPracownik"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="peselPracownik"/>
                     <Button Content="Zdjęcie" HorizontalAlignment="Left" Margin="472,48,0,0" VerticalAlignment="Top" Name="zdjeciePracownik" Click="zdjeciePracownik_Click"/>
-                    <TextBox HorizontalAlignment="Left" Margin="472,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="plecPracownik"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="472,84,0,0" VerticalAlignment="Top" Width="120" Name="plecPracownik">
+                        <ComboBoxItem>Pan</ComboBoxItem>
+                        <ComboBoxItem>Pani</ComboBoxItem>
+                    </ComboBox>
                     <ComboBox HorizontalAlignment="Left" Margin="472,120,0,0" VerticalAlignment="Top" Width="120" Name="etatPracownik">
-                        <ComboBoxItem IsSelected="True">Pełen etat</ComboBoxItem>
+                        <ComboBoxItem>Pełen etat</ComboBoxItem>
                         <ComboBoxItem>Pół etatu</ComboBoxItem>
                     </ComboBox>
                     <TextBox HorizontalAlignment="Left" Margin="472,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="opisPracownik"/>
-                    <DatePicker HorizontalAlignment="Left" Margin="472,190,0,0" VerticalAlignment="Top"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="472,190,0,0" VerticalAlignment="Top" Name="dataZPracownik"/>
                     
                     <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
                     <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>

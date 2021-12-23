@@ -34,17 +34,28 @@ namespace Sekretariat
                 
             if (theDialog.ShowDialog() == true)
             {
+                File.AppendAllText(theDialog.FileName, "Imię: ");
                 File.AppendAllText(theDialog.FileName, imieUczen1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Drugie Imię: ");
                 File.AppendAllText(theDialog.FileName, imieUczen2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoUczen1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko panieńskie: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoUczen2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Imiona rodziców: ");
                 File.AppendAllText(theDialog.FileName, imionaUczen1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, ", ");
                 File.AppendAllText(theDialog.FileName, imionaUczen2.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Data urodzenia: ");
+                File.AppendAllText(theDialog.FileName, dataUUczen.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Pesel: ");
+                File.AppendAllText(theDialog.FileName, peselUczen.Text);
             }
         }
         private void zdjecieNauczyciel_Click(object sender, RoutedEventArgs e)
@@ -69,17 +80,44 @@ namespace Sekretariat
 
             if (theDialog.ShowDialog() == true)
             {
+                File.AppendAllText(theDialog.FileName, "Imię: ");
                 File.AppendAllText(theDialog.FileName, imieNauczyciel1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Drugie Imię: ");
                 File.AppendAllText(theDialog.FileName, imieNauczyciel2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoNauczyciel1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko panieńskie: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoNauczyciel2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Imiona rodziców: ");
                 File.AppendAllText(theDialog.FileName, imionaNauczyciel1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, ", ");
                 File.AppendAllText(theDialog.FileName, imionaNauczyciel2.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Data urodzenia: ");
+                File.AppendAllText(theDialog.FileName, dataUNauczyciel.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Pesel: ");
+                File.AppendAllText(theDialog.FileName, peselNauczyciel.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Płeć: ");
+                File.AppendAllText(theDialog.FileName, plecNauczyciel.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Wychowastwo: ");
+                if (wychowastwoNauczyciel.IsChecked == true) { File.AppendAllText(theDialog.FileName, "TAK"); }
+                else{ File.AppendAllText(theDialog.FileName, "NIE"); }
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Przedmioty nauczane: ");
+                File.AppendAllText(theDialog.FileName, przedmiotyNauczyciel.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Klasy: ");
+                File.AppendAllText(theDialog.FileName, klasyNauczyciel.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Data zatrudnienia: ");
+                File.AppendAllText(theDialog.FileName, dataZNauczyciel.Text);
             }
         }
         private void zdjeciePracownik_Click(object sender, RoutedEventArgs e)
@@ -104,17 +142,40 @@ namespace Sekretariat
 
             if (theDialog.ShowDialog() == true)
             {
+                File.AppendAllText(theDialog.FileName, "Imię: ");
                 File.AppendAllText(theDialog.FileName, imiePracownik1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Drugie Imię: ");
                 File.AppendAllText(theDialog.FileName, imiePracownik2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoPracownik1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Nazwisko panieńskie: ");
                 File.AppendAllText(theDialog.FileName, nazwiskoPracownik2.Text);
                 File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Imiona rodziców: ");
                 File.AppendAllText(theDialog.FileName, imionaPracownik1.Text);
-                File.AppendAllText(theDialog.FileName, " ");
+                File.AppendAllText(theDialog.FileName, ", ");
                 File.AppendAllText(theDialog.FileName, imionaPracownik2.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Data urodzenia: ");
+                File.AppendAllText(theDialog.FileName, dataUPracownik.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Pesel: ");
+                File.AppendAllText(theDialog.FileName, peselPracownik.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Płeć: ");
+                File.AppendAllText(theDialog.FileName, plecPracownik.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Etat: ");
+                File.AppendAllText(theDialog.FileName, etatPracownik.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Opis stanowiska: ");
+                File.AppendAllText(theDialog.FileName, opisPracownik.Text);
+                File.AppendAllText(theDialog.FileName, Environment.NewLine);
+                File.AppendAllText(theDialog.FileName, "Data zatrudnienia: ");
+                File.AppendAllText(theDialog.FileName, dataZPracownik.Text);
             }
         }
     }
