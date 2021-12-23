@@ -10,14 +10,14 @@
         <TabControl>
             <TabItem Header="Uczeń">
                 <Grid Background="#7E8EA8">
-                    <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imie1"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imie2"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwisko1"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwisko2"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiona1"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiona2"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="data"/>
-                    <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="pesel"/>
+                    
+                    <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieUczen1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieUczen2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoUczen1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoUczen2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaUczen1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaUczen2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="peselUczen"/>
                     <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
                     <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
                     <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
@@ -25,14 +25,82 @@
                     <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
                     <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
                     <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submit" Click="submit_Click"/>
+                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitUczen" Click="submit_Click_Uczen"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,256,0,0" VerticalAlignment="Top"/>
+                    
                 </Grid>
             </TabItem>
             <TabItem Header="Nauczyciel">
-                <Grid Background="#7E8EA8"/>
+                <Grid Background="#7E8EA8">
+                    
+                    <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieNauczyciel1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieNauczyciel2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoNauczyciel1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoNauczyciel2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaNauczyciel1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaNauczyciel2"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,257,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="peselNauczyciel"/>
+                    <Button Content="Zdjęcie" HorizontalAlignment="Left" Margin="472,48,0,0" VerticalAlignment="Top" Name="zdjecieNauczyciel" Click="zdjecieNauczyciel_Click"/>
+                    <TextBox HorizontalAlignment="Left" Margin="472,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="plecNauczyciel"/>
+                    <CheckBox HorizontalAlignment="Left" Margin="472,120,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="472,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Name="przedmiotyNauczyciel"/>
+                    <TextBox HorizontalAlignment="Left" Margin="472,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="klasyNauczyciel"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="472,219,0,0" VerticalAlignment="Top"/>
+                    
+                    <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko Panieńskie" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Zdjęcie" HorizontalAlignment="Left" Margin="310,45,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Płeć" HorizontalAlignment="Left" Margin="310,80,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Wychowastwo" HorizontalAlignment="Left" Margin="310,115,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Przedmioty Nauczane" HorizontalAlignment="Left" Margin="310,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Klasy" HorizontalAlignment="Left" Margin="310,185,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Data zatrudnienia" HorizontalAlignment="Left" Margin="310,217,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitNauczyciel" Click="submit_Click_Nauczyciel"/>
+                    
+                </Grid>
             </TabItem>
             <TabItem Header="Pracownik Obsługi">
-                <Grid Background="#7E8EA8"/>
+                <Grid Background="#7E8EA8">
+                    
+                    <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiePracownik1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiePracownik2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoPracownik1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoPracownik2"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaPracownik1"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imionaPracownik2"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="135,255,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Margin="135,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="peselPracownik"/>
+                    <Button Content="Zdjęcie" HorizontalAlignment="Left" Margin="472,48,0,0" VerticalAlignment="Top" Name="zdjeciePracownik" Click="zdjeciePracownik_Click"/>
+                    <TextBox HorizontalAlignment="Left" Margin="472,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="plecPracownik"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="472,120,0,0" VerticalAlignment="Top" Width="120" Name="etatPracownik">
+                        <ComboBoxItem IsSelected="True">Pełen etat</ComboBoxItem>
+                        <ComboBoxItem>Pół etatu</ComboBoxItem>
+                    </ComboBox>
+                    <TextBox HorizontalAlignment="Left" Margin="472,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="opisPracownik"/>
+                    <DatePicker HorizontalAlignment="Left" Margin="472,190,0,0" VerticalAlignment="Top"/>
+                    
+                    <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Nazwisko Panieńskie" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Zdjęcie" HorizontalAlignment="Left" Margin="310,45,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Płeć" HorizontalAlignment="Left" Margin="310,80,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Etat" HorizontalAlignment="Left" Margin="310,115,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Opis stanowiska" HorizontalAlignment="Left" Margin="310,150,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Data zatrudnienia" HorizontalAlignment="Left" Margin="310,185,0,0" VerticalAlignment="Top"/>
+                    
+                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitPracownik" Click="submit_Click_Pracownik"/>
+                   
+                </Grid>
             </TabItem>
         </TabControl>
 
