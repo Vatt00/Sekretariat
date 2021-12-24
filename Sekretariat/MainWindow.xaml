@@ -6,11 +6,29 @@
         xmlns:local="clr-namespace:Sekretariat"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="Save Uczeń" Click="submit_Click_Uczen"/>
+                <MenuItem Header="Save Nauczyciel" Click="submit_Click_Nauczyciel"/>
+                <MenuItem Header="Save Pracownik" Click="submit_Click_Pracownik"/>
+                <Separator />
+                <MenuItem Header="Open Uczeń" Click="input_Click_Uczen"/>
+                <MenuItem Header="Open Nauczyciel" Click="input_Click_Nauczyciel"/>
+                <MenuItem Header="Open Pracownik" Click="input_Click_Pracownik"/>
+                <Separator />
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
+        </Menu>
         <TabControl>
-            <TabItem Header="Uczeń">
+            <TabItem Header="Uczeń"> 
                 <Grid Background="#7E8EA8">
-                    
+
                     <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieUczen1"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieUczen2"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoUczen1"/>
@@ -25,14 +43,15 @@
                     <Label Content="Imiona Rodziców" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top"/>
                     <Label Content="Data Urodzenia" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top"/>
                     <Label Content="Pesel" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitUczen" Click="submit_Click_Uczen"/>
+                    <Button Content="Zapisz" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitUczen" Click="submit_Click_Uczen"/>
+                    <Button Content="Odczyt" HorizontalAlignment="Left" Margin="163,337,0,0" VerticalAlignment="Top" Name="inputUczen" Click="input_Click_Uczen"/>
                     <DatePicker HorizontalAlignment="Left" Margin="135,256,0,0" VerticalAlignment="Top" Name="dataUUczen"/>
-                    
+
                 </Grid>
             </TabItem>
             <TabItem Header="Nauczyciel">
                 <Grid Background="#7E8EA8">
-                    
+
                     <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieNauczyciel1"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imieNauczyciel2"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoNauczyciel1"/>
@@ -50,7 +69,7 @@
                     <TextBox HorizontalAlignment="Left" Margin="472,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Name="przedmiotyNauczyciel"/>
                     <TextBox HorizontalAlignment="Left" Margin="472,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Name="klasyNauczyciel"/>
                     <DatePicker HorizontalAlignment="Left" Margin="472,219,0,0" VerticalAlignment="Top" Name="dataZNauczyciel"/>
-                    
+
                     <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
                     <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
                     <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
@@ -64,13 +83,14 @@
                     <Label Content="Przedmioty Nauczane" HorizontalAlignment="Left" Margin="310,150,0,0" VerticalAlignment="Top"/>
                     <Label Content="Klasy" HorizontalAlignment="Left" Margin="310,185,0,0" VerticalAlignment="Top"/>
                     <Label Content="Data zatrudnienia" HorizontalAlignment="Left" Margin="310,217,0,0" VerticalAlignment="Top"/>
-                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitNauczyciel" Click="submit_Click_Nauczyciel"/>
-                    
+                    <Button Content="Zapisz" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitNauczyciel" Click="submit_Click_Nauczyciel"/>
+                    <Button Content="Odczyt" HorizontalAlignment="Left" Margin="163,337,0,0" VerticalAlignment="Top" Name="inputNauczyciel" Click="input_Click_Nauczyciel"/>
+
                 </Grid>
             </TabItem>
             <TabItem Header="Pracownik Obsługi">
                 <Grid Background="#7E8EA8">
-                    
+
                     <TextBox HorizontalAlignment="Left" Margin="135,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiePracownik1"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="imiePracownik2"/>
                     <TextBox HorizontalAlignment="Left" Margin="135,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="nazwiskoPracownik1"/>
@@ -90,7 +110,7 @@
                     </ComboBox>
                     <TextBox HorizontalAlignment="Left" Margin="472,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="opisPracownik"/>
                     <DatePicker HorizontalAlignment="Left" Margin="472,190,0,0" VerticalAlignment="Top" Name="dataZPracownik"/>
-                    
+
                     <Label Content="Imię" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top"/>
                     <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
                     <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top"/>
@@ -103,12 +123,12 @@
                     <Label Content="Etat" HorizontalAlignment="Left" Margin="310,115,0,0" VerticalAlignment="Top"/>
                     <Label Content="Opis stanowiska" HorizontalAlignment="Left" Margin="310,150,0,0" VerticalAlignment="Top"/>
                     <Label Content="Data zatrudnienia" HorizontalAlignment="Left" Margin="310,185,0,0" VerticalAlignment="Top"/>
-                    
-                    <Button Content="Submit" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitPracownik" Click="submit_Click_Pracownik"/>
-                   
+
+                    <Button Content="Zapisz" HorizontalAlignment="Left" Margin="215,337,0,0" VerticalAlignment="Top" Name="submitPracownik" Click="submit_Click_Pracownik"/>
+                    <Button Content="Odczyt" HorizontalAlignment="Left" Margin="163,337,0,0" VerticalAlignment="Top" Name="inputPracownik" Click="input_Click_Pracownik"/>
+
                 </Grid>
             </TabItem>
         </TabControl>
-
-    </Grid>
+    </DockPanel>
 </Window>
