@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="_File">
+            <MenuItem Header="Plik">
                 <MenuItem Header="Save Uczeń" Click="submit_Click_Uczen"/>
                 <MenuItem Header="Save Nauczyciel" Click="submit_Click_Nauczyciel"/>
                 <MenuItem Header="Save Pracownik" Click="submit_Click_Pracownik"/>
@@ -19,7 +19,7 @@
                 <Separator />
                 <MenuItem Header="_Exit"/>
             </MenuItem>
-            <MenuItem Header="_Edit">
+            <MenuItem Header="Edytuj">
                 <MenuItem Command="Cut" />
                 <MenuItem Command="Copy" />
                 <MenuItem Command="Paste" />
