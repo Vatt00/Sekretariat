@@ -1,0 +1,13 @@
+Menu składające się z zakładek: Plik, Edytuj
+TabControl z zakładkami: Uczeń, Nauczyciel, Pracownik Obsługi
+Odczytywanie - wyskakujące okienko z wyborem pliku tekstowego
+Zapisywanie - wyskakujące okienko z zapisem pliku tekstowego
+Wczytywanie zdjęcia - wyskakujące okienko z wyborem pliku graficznego
+
+- Imię, Drugie imię, Nazwisko, Nazwisko Panieńskie, Imiona Rodziców, Pesel, Przedmioty Nauczane, Klasy, Opis stanowiska - TextBox
+
+- Data urodzenia, Data zatrudnienia - DatePicker
+
+- Płeć, Etat - Combobox
+
+- Odczyt, Zapis, Zdjęcie - Button
